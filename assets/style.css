@@ -14,7 +14,7 @@ body {
   color: var(--primary-text);
 }
 
-header, #hero {
+header, main {
 	padding: 0 1.8rem;
 }
 
