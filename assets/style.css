@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;600;700&display=swap');
 
 :root {
 	font-size: 10px;
@@ -8,9 +8,13 @@
 	--light-text: #8B9FB0;
 	--accent-text: #8D2B0B;
 	--background-accent: #F7C948;
+	--card-border: #BCCCDC;
+	--accent-blue-text: #186FAF;
+	--accent-blue-bg: #2680C2;
 }
 
 body {
+	box-sizing: border-box;
 	font-size: 1.6rem;
 	background-color: var(--background-grey);
 	color: var(--primary-text);
@@ -74,10 +78,12 @@ header .big-logo {
 }
 
 /* Popular Section */
-.article-title {
+.article-title,
+.card .action {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
+	margin-bottom: 1.2rem;
 }
 
 .article-title h2 {
@@ -90,4 +96,49 @@ header .big-logo {
 	color: var(--light-text);
 	font-size: 1.4rem;
 	cursor: pointer;
+}
+
+/* Card */
+.card-container {
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+	padding: 1.6rem;
+	border: 1px solid var(--card-border);
+	border-radius: 0.8rem;
+	max-width: min-content;
+}
+
+.card img {
+	border-radius: 0.8rem;
+}
+
+.card h3 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 1rem 0;
+}
+
+.card>p {
+	color: var(--secondary-text);
+	line-height: 120%;
+	margin-bottom: 2rem;
+}
+
+.card .action {
+	margin: 0;
+}
+
+.card .action p {
+	font-weight: 700;
+	color: var(--accent-blue-text);
+}
+
+.btn-action {
+	background-color: var(--accent-blue-bg);
+	color: #fff;
+	border: 0;
+	padding: 0.6rem 2.8rem;
 }
