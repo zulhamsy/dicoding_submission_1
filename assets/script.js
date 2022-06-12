@@ -1,9 +1,21 @@
 const POPULAR_NFT = [
 	{
-		name: 'A Spacesuit 2',
+		name: 'A Spacesuit',
 		desc: 'First and exclusive NFT from A Bathing Ape',
 		img: './assets/img/spacesuit.png',
 		price: '4.5 ETH'
+	},
+	{
+		name: 'Angry Bitcoin',
+		desc: '#2 Collection from A Bathing Ape with bitcoin detail',
+		img: './assets/img/angry-bitcoin.png',
+		price: '2.5 BTC'
+	},
+	{
+		name: 'Space Police #3',
+		desc: 'Most wanted NFT from A Bathing Ape X Police Watch',
+		img: './assets/img/space-police.png',
+		price: '7.5 ETH'
 	}
 ]
 
@@ -25,4 +37,6 @@ function createCard(payload) {
 	CARD_CONTAINER[0].appendChild(CARD)
 }
 
-createCard(POPULAR_NFT[0])
+for(let i = 0; i < POPULAR_NFT.length; i++) {
+	createCard(POPULAR_NFT[i])
+}
