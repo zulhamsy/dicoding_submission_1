@@ -101,7 +101,9 @@ header .big-logo {
 /* Card */
 .card-container {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.8rem;
 }
 
 .card {
