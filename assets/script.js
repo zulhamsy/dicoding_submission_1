@@ -19,6 +19,33 @@ const POPULAR_NFT = [
 	}
 ]
 
+const ALL_COLLECTION = [
+	{
+		name: 'Hansip Collection',
+		desc: 'Koleksi NFT Hansip Ape yang tidak ada duanya',
+		img: './assets/img/hansip-collection.png',
+		price: '2.5 ETH'
+	},
+	{
+		name: 'Cyborg Navy Collection',
+		desc: 'Koleksi NFT Robot Pelaut yang laris manis di pasaran',
+		img: './assets/img/cyborg-collection.png',
+		price: '1.25 ETH'
+	},
+	{
+		name: 'Cyberpunk 2077',
+		desc: 'Terinspirasi dari Cyberpunk 2077, koleksi NFT terdepan',
+		img: './assets/img/cyberpunk-collection.png',
+		price: '2.65 ETH'
+	},
+	{
+		name: 'Ewh!',
+		desc: 'Ewh! NFT banci tapi ga dibenci',
+		img: './assets/img/ewh-collection.png',
+		price: '1.2 ETH'
+	}
+]
+
 const CARD_CONTAINER = document.getElementsByClassName('card-container')
 
 function createCard(payload) {
@@ -37,6 +64,25 @@ function createCard(payload) {
 	CARD_CONTAINER[0].appendChild(CARD)
 }
 
+function createSmallCard(payload) {
+	const CARD = document.createElement('div')
+	CARD.className = 'card-sm'
+	CARD.innerHTML = `
+		<img src="${payload.img}" alt="${payload.name}">
+		<h3>${payload.name}</h3>
+		<p>${payload.desc}</p>
+		<div class="action">
+			<p>${payload.price}</p>
+		</div>
+	`
+
+	CARD_CONTAINER[1].appendChild(CARD)
+}
+
 for(let i = 0; i < POPULAR_NFT.length; i++) {
 	createCard(POPULAR_NFT[i])
+}
+
+for(let i = 0; i < ALL_COLLECTION.length; i++) {
+	createSmallCard(ALL_COLLECTION[i])
 }
