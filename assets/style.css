@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:ital,wght@0,300;0,600;0,700;1,400&display=swap');
 
 :root {
 	font-size: 10px;
@@ -11,6 +11,8 @@
 	--card-border: #BCCCDC;
 	--accent-blue-text: #186FAF;
 	--accent-blue-bg: #2680C2;
+	--dark-text: #102A43;
+	--subtle-text: #8295A8;
 }
 
 body {
@@ -22,7 +24,7 @@ body {
 }
 
 header,
-main {
+#content {
 	padding: 0 1.8rem;
 }
 
@@ -168,4 +170,29 @@ article:first-of-type {
 	color: var(--secondary-text);
 	line-height: 125%;
 	margin-bottom: 2rem;
+}
+
+/* Aside Testimonial */
+aside {
+	background: rgb(208,219,231);
+	background: linear-gradient(126deg, rgba(208,219,231,1) 84%, rgba(169,183,196,1) 100%);
+	padding: 4rem 1.8rem;
+	margin-top: 6rem;
+}
+
+.aside-text .text {
+	font-style: italic;
+	line-height: 145%;
+	margin-bottom: 1.4rem;
+}
+
+.aside-text .author {
+	font-weight: 600;
+	color: var(--dark-text);
+	margin-bottom: 0.6rem;
+}
+
+.aside-text .author-desc {
+	font-size: 1.2rem;
+	color: var(--subtle-text);
 }
