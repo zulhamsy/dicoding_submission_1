@@ -178,6 +178,7 @@ aside {
 	background: linear-gradient(126deg, rgba(208,219,231,1) 84%, rgba(169,183,196,1) 100%);
 	padding: 4rem 1.8rem;
 	margin-top: 6rem;
+	margin-bottom: 10rem;
 }
 
 .aside-text .text {
@@ -195,4 +196,21 @@ aside {
 .aside-text .author-desc {
 	font-size: 1.2rem;
 	color: var(--subtle-text);
+}
+
+/* Footer */
+footer {
+	margin-bottom: 4.4rem;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.footer-title {
+	font-weight: 700;
+	text-decoration: none;
+	color: var(--primary-text);
+}
+
+.footer-title:first-of-type {
+	margin-bottom: 0.6rem;
 }
