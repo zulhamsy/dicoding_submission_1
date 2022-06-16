@@ -1,7 +1,7 @@
 /* Tablet */
 @media (min-width: 724px) {
   .aside-text {
-    max-width: 52ch;
+    max-width: 70ch;
     margin: auto;
   }
 }
@@ -17,6 +17,11 @@
     margin-bottom: 9.2rem;
   }
 
+  #content {
+    max-width: fit-content;
+    margin: auto;
+  }
+
   #hero,
   article:first-of-type {
     margin-bottom: 10rem;
@@ -25,6 +30,8 @@
   aside {
     margin-top: 10rem;
     margin-bottom: 15rem;
+    padding: 5.2rem 0;
+    width: 1440px;
   }
 
   #hero img {
@@ -38,5 +45,17 @@
 
   .subheading {
     margin-bottom: 3.2rem;
+  }
+
+  article:nth-of-type(2) .card-container {
+    justify-content: space-between;
+  }
+
+  .aside-text .text {
+    margin-bottom: 2.8rem;
+  }
+
+  .aside-text .author {
+    margin-bottom: 0.8rem;
   }
 }

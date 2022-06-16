@@ -122,7 +122,8 @@ article:first-of-type {
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 1.8rem;
+	gap: 1rem;
+	width: 100%;
 }
 
 .card,
