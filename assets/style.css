@@ -63,7 +63,8 @@ header .big-logo {
 .subheading {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
-	font-size: 1.4rem;
+	/* font-size: 1.4rem; */
+	font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 3.62px) * 0.9276)), 2.4rem);
 	margin-bottom: 2.4rem;
 	color: var(--secondary-text);
 }
