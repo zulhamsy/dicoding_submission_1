@@ -49,7 +49,9 @@ header .big-logo {
 }
 
 #hero h1 {
-	font-size: 3.2rem;
+	/* font-size: 3.2rem; */
+	font-size: clamp(3.2rem, calc(3.2rem + ((1vw - 3.62px) * 2.5974)), 6rem);
+	max-width: 15ch;
 	line-height: 120%;
 	margin-bottom: 1.2rem;
 }
