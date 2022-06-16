@@ -8,8 +8,9 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
+  /* Major Layout Shift */
   body {
-    padding: 0 1rem;
+    max-width: fit-content;
   }
 
   header {
@@ -24,5 +25,10 @@
   aside {
     margin-top: 12rem;
     margin-bottom: 15rem;
+  }
+
+  /* Minor Layout Shift */
+  #hero h1 {
+    margin-bottom: 2.4rem;
   }
 }

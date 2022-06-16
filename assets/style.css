@@ -21,7 +21,7 @@ body {
 	background-color: var(--background-grey);
 	color: var(--primary-text);
 	font-family: 'Montserrat', sans-serif;
-	max-width: 1440px;
+	/* max-width: 1440px; */
 	margin: auto;
 }
 
