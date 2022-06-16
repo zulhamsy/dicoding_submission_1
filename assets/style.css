@@ -48,6 +48,9 @@ header .big-logo {
 	font-family: 'Libre Baskerville', serif;
 	font-weight: 400;
 	margin-bottom: 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 #hero h1 {
@@ -60,6 +63,10 @@ header .big-logo {
 
 #hero h1 span {
 	font-weight: 700;
+}
+
+#hero img {
+	display: none;
 }
 
 .subheading {

@@ -19,16 +19,24 @@
 
   #hero,
   article:first-of-type {
-    margin-bottom: 12rem;
+    margin-bottom: 10rem;
   }
 
   aside {
-    margin-top: 12rem;
+    margin-top: 10rem;
     margin-bottom: 15rem;
+  }
+
+  #hero img {
+    display: inline-block;
   }
 
   /* Minor Layout Shift */
   #hero h1 {
     margin-bottom: 2.4rem;
+  }
+
+  .subheading {
+    margin-bottom: 3.2rem;
   }
 }
