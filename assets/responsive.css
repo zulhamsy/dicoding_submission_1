@@ -10,7 +10,7 @@
 @media (min-width: 1024px) {
   /* Major Layout Shift */
   body {
-    max-width: fit-content;
+    max-width: 1440px;
   }
 
   header {
@@ -31,7 +31,16 @@
     margin-top: 10rem;
     margin-bottom: 15rem;
     padding: 5.2rem 0;
-    width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  aside img {
+    display: inline-block;
+    align-self: flex-start;
+    width: 20rem;
   }
 
   #hero img {
@@ -49,6 +58,10 @@
 
   article:nth-of-type(2) .card-container {
     justify-content: space-between;
+  }
+
+  .aside-text {
+    margin: 0;
   }
 
   .aside-text .text {

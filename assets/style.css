@@ -194,6 +194,10 @@ aside {
 	margin-bottom: 10rem;
 }
 
+aside img {
+	display: none;
+}
+
 .aside-text .text {
 	font-style: italic;
 	line-height: 145%;
